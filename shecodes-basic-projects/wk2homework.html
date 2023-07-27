@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clouds{
+        text-align: center;
+        font-size: 30px;
+      }
+      h1{
+        color: rgb(35, 38, 240);
+        font-family: sans-serif;
+      }
+      body{
+        text-align: center;
+      }
+      p{
+        font-weight: bolder;
+        font-family: sans-serif;
+      }
+      button{
+        background-color: #1a64d6;
+        color: white;
+        border-radius: 30px;
+        padding: 20px 30px 20px 30px ;
+        margin: 10px 40px 10px 40px;
+        box-shadow: 0px 8px 8px 0px rgba(37, 39, 0, 0.8);
+        border: 1px solid #1a64d6 ;
+        transition:all 200ms ease-in-out; 
+        cursor: pointer;
+      }
+      button:hover{
+        background-color: white;
+        color:#1a64d6
+      }
+      .name{
+        font-weight: 100;
+        font-family:  monospace;
+      }
+      .bold{
+        font-weight: bolder;
+      }
+      .edit{
+        padding:10px 20px 10px 20px;
+        margin:0px 350px 0px 350px;
+        background-color: transparent;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .edit:hover{
+        background-color: #f8e7b4
+      }
+      .mini{
+        margin:20px
+      }
+    </style>
+</head>
+<body>
+    <p class="clouds"> &#127780</p>
+    <h1>Currently 21&deg; in Tokyo</h1>
+    <h2>
+    <div>
+       13&deg;/
+        <strong class="bold">23&deg</strong>
+    </div>
+    </h2>
+    <div class="edit">&#127783 <strong>Tomorrow</strong>
+    <div class="mini">
+        10&deg;/
+        <strong>22&deg;</strong>
+    </div>
+</div>
+    <div class="edit">&#127781 <strong>Saturday</strong>
+    <div class="mini">
+        15&deg;/
+        <strong>17&deg;</strong>
+    </div>
+</div>
+    <div class="edit">&#127774 <strong>Sunday</strong>
+    <div class="mini">
+        25&deg;/
+        <strong>28&deg;</strong>
+    </div>
+    </div>
+    <button>Change city</button>
+    <p class="name">Coded by Imafidon Tabitha</p>
+    <script>
+        function changecity(){
+            let city = prompt("what city do you live in");
+            let temperature = prompt("what temperature is it");
+            let h1 = document.querySelector("h1");
+            let clouds =document.querySelector(".clouds")
+            if (temperature >= 0){
+                h1.innerHTML = "Currently " + temperature + "&degC in " + city; 
+                clouds.innerHTML = "&#128516";
+            }
+            else{
+                h1.innerHTML = "Currently " + temperature + "&degC in " + city;
+                clouds.innerHTML = "&#128577";
+            }
+        }
+        let changecitybutton = document.querySelector("button");
+        changecitybutton.addEventListener("click", changecity);
+    </script>
+</body>
+</html>

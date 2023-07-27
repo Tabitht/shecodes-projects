@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        margin: 50px 300px 50px 300px;
+        padding: 0%;
+        background-color: darkmagenta;
+      }
+      .article {
+        text-align: justify;
+        margin: 10px 200px 10px 200px;
+        line-height: 50px;
+        font-weight: bolder;
+        font-size: 25px;
+        font-family: "Times New Roman", Times, serif;
+      }
+      h1 {
+        color: chocolate;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: bolder;
+        font-size: 50px;
+      }
+      h2 {
+        color: rgb(199, 146, 146);
+        font-weight: bolder;
+        font-size: 40px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      a {
+        color: olivedrab;
+      }
+      button {
+        background-color: coral;
+        color: black;
+        padding: 20px;
+        margin: 20px;
+        font-size: 20px;
+        font-weight: bolder;
+        border-radius: 40px;
+        border: 1px solid;
+        box-shadow: 0px 4px 0px 4px rgb(37, 39, 0, 0.8);
+        transition: all 200ms ease-in-out;
+      }
+      .name {
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: darkgray;
+      }
+      button:hover {
+        background-color: aliceblue;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Branded Luxury</h1>
+    <h2>The path to a sophisticated look</h2>
+    <img
+      src="https://media.istockphoto.com/id/155596905/photo/high-class-
+female-clothing.jpg?s=612x612&w=0&k=20&c=V1HcqglhOc76MHidrmyPjraiMNXwhAzO-wMHbEMMEqM="
+    />
+    <p class="article">
+      Designer clothing is expensive luxury clothing proven to be high quality
+      and haute couture for the general public, made by, or carrying the label
+      of a well-known fashion designer.
+    </p>
+    <p class="article">
+      Designer clothing is not always created by the founder of the company. For
+      example, the actual designer of Chanel is not its original founder and
+      designer Gabrielle Chanel, but French designer virginie viard.
+      <a
+        href="https://en.m.wikipedia.org/wiki/Designer_clothing"
+        target="_blank"
+      >
+        Learn more</a
+      >
+    </p>
+    <button>Contact Us</button>
+    <p class="name">Coded by Imafidon Tabitha</p>
+    <script>
+      function contactus() {
+        let name = prompt("what is your name?");
+        let clothing = prompt("what type of clothing would you like");
+        clothing = clothing.toLowerCase().trim();
+        let h1 = document.querySelector("h1");
+        if (clothing === "corporate wears" || clothing === "corporate") {
+          let specific = prompt(
+            "what particular clothing e.g coats, skirts,gowns etc"
+          );
+          alert("your choice has been recorded");
+          h1.innerHTML = "Thank You For Contacting Us, we would be in touch";
+        } else {
+          h1.innerHTML = "We don't have that in stock yet, visit later";
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", contactus);
+    </script>
+  </body>
+</html>
