@@ -1,0 +1,21 @@
+body {
+  margin: 20px 30px;
+  background-color: bisque;
+}
+button {
+  margin-bottom: 50px;
+  border-radius: 10px;
+  color: white;
+  background-color: brown;
+}
+button:hover {
+  background-color: beige;
+  color: black;
+}
+.main-weather {
+  margin-bottom: 50px;
+}
+.first {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 90px;
+}

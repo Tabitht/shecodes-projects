@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+}
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h3 {
+  color: #8064e9;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+button {
+  background-color: rgb(150, 67, 228);
+  color: white;
+  border-radius: 15px;
+  padding: 10px 20px;
+  margin-top: 50px;
+}
