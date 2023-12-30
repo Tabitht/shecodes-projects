@@ -23,3 +23,18 @@ let dtime = new Date();
 put_date.innerHTML = realdate(dtime);
 let search_buttton = document.querySelector("#search-button");
 search_buttton.addEventListener("click", search);
+
+function applydetail(response) {
+  let temperature = document.querySelector("#temp");
+  let changed = response.data;
+  temperature.innerHTML = `${changed}&degC`;
+}
+function execute() {
+  let search_city = document.querySelector("#search-city");
+  let city = search_city.value;
+  let apikey = "c1o355et4b9aed09b1a6435d6694e4ff";
+  let apiurl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apikey}`;
+  axios.get(apiurl).then(applydetail);
+}
+let click = document.querySelector("#search-button");
+click.addEventListener("click", execute);
