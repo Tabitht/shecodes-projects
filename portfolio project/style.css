@@ -34,3 +34,11 @@
     background-color: rgb(238, 221, 221);
     margin: 15px;
 }
+@media (max-width: 576px){
+    .title{
+        text-align: center;
+    }
+    .small{
+        text-align: center;
+    }
+}
