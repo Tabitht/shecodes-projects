@@ -1,3 +1,6 @@
+body{
+    background-color: rgba(107, 33, 175, 0.897);
+}
 .first{
     font-size: 60px;
     font-weight: bold;
