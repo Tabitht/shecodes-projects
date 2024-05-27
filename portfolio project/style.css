@@ -36,7 +36,10 @@ body{
 .aboutme{
     color: #4F0B40
 }
-
+p{
+    color: #000000;
+    font-weight: bolder;
+}
 @media(max-width: 860px){
     .name{
         font-size: 60px;
