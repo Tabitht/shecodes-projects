@@ -10,70 +10,42 @@
     <title>Tabitha portfolio project</title>
     <link rel="stylesheet" href="style.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-RnWPkNfD2H9Vktltbh2xw3t+LaI50C9nOOpDX3ZW6+VFF5V2Tx/AtfAGs3EdMZJO/BymE9prqmLkVGfYH/Lgjw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="bg-body-tertiary">
-    <nav class="navbar navbar-expand-lg bg-secondary">
+    <div class="nav">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand text-light fw-bolder" href="#">👩🏻‍💻Tabitha</a>
+            <a class="navbar-brand text-dark fw-bolder" href="#">👩🏻‍💻Tabitha</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active text-light fw-bolder" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active text-dark fw-bolder" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light fw-bolder" href="about.html">About</a>
+                        <a class="nav-link fw-bolder aboutme" href="about.html">About me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light fw-bolder" href="project/weather.html">Project</a>
+                        <a class="nav-link text-dark fw-bolder MyWork" href="project/work.html">My Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-bolder MyWork" href="contact.html">contact me</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <h2 class="first text-center">Hi I'm</h2>
-    <h1 class="second text-center">👩🏻Imafidon Tabitha</h1>
-    <p class="desc text-center">Web developer based in Nigeria</p>
-    <div class="contain">
-    <div class="mini-container"><a href="about.html" class="text-body-secondary text-decoration-none" title="about Tabitha">About me</a></div>
-    <div class="mini-container"><a href="about.html#contact" class="text-body-secondary text-decoration-none" title="contact Tabitha">Contact me</a></div>
     </div>
-    <div class="container">
-        <div class="row my-3">
-            <div class="col-6 bg-dark-subtle d-none d-md-block">
-                <img src="images/landing_page.jpg" alt="landing-page" class="img-fluid rounded p-3 w-100 h-100">
-             </div>
-             <div class="col-md-6 col-sm-12 p-3 bg-light-subtle">
-                <h2 class="title">Luxury Goods Landpage Project</h2>
-                <p class="small">This project is a simple landing page on luxury goods. it was coded using CSS, HTML and Javascript.</p>
-                <div><button class="rounded bg-dark text-light" title="lauch landpage project"><a href="https://my-landing-page-8s4m.onrender.com">launch webpage</a></button></div>
-             </div>
-        </div>
-        <div class="row my-3">
-            <div class="col-sm-12 col-md-6 p-3 bg-light-subtle">
-                <h2 class="title">Weather App Project</h2>
-                <p class="small">This weather app project was built using CSS, HTML, Ajax, Axios and Javascript. it gives the current weather of a particular country or state entered. it also adds some other information, like wind speed, humidty and an emoji to represent the weather condition.</p>
-                     <div><button class="rounded bg-dark text-light" title="launch weaather app project"><a  href="https://tabitha-weather-app.onrender.com">launch weatherapp</a></button></div>
-            </div>
-             <div class="col-md-6 col-sm-12 bg-dark-subtle d-none d-md-block">
-                <img src="images/Weather_App.jpg" alt="weather-app" class="img-fluid rounded p-3 w-100 h-100">
-            </div>
-        </div>
-        <div class="row my-3">
-            <div class="btn col-6 bg-dark-subtle d-none d-md-block">
-                <img src="images/palindrome_image.jpg" alt="palindrome_app_image" class="img-fluid rounded p-3 w-100 h-100">
-            </div>
-            <div class="col-md-6 col-sm-12 p-3 bg-light-subtle">
-                <h2 class="title">Palindrome App Project </h2>
-                <p class="small">A palindrome page, it takes in an input string and checks if it is a palindrome or not.</p>
-                <div><button class="rounded bg-dark text-light" title="launch palindrome app"><a href="https://palindrome-project.onrender.com">launch Palindrome app</a></button></div>
-            </div>
-        </div>
+    <div class="main">
+        <h2 class="wave">Hi,</h2>
+        <h2 class="name">I'm Imafidon Tabitha</h2>
+        <h3 class="about">Frontend developer based in Nigeria</h3>
+        <button class="button"><a class="link" href="contact.html">Contact me</a></button>
     </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+    </script>
 </body>
-</html>
